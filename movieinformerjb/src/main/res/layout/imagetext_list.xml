@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:baselineAligned="true">
+
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtTitle"
+        android:text="Movie title"
+        android:typeface="sans"
+        android:textSize="16dp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="52dp"
+        android:id="@+id/imgIcon" />
+
+
+    <LinearLayout android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Release date: "
+            android:textSize="12dp"></TextView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate"
+            android:textStyle="bold"
+            android:textSize="12dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout03"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Vote average: "
+            android:textSize="12dp"></TextView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVote"
+            android:textStyle="bold"
+            android:textSize="12dp"></TextView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

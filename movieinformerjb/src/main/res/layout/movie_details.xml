@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:baselineAligned="true">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/mainTitle"
+        android:text="About"
+        android:typeface="normal"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult">
+
+        </TextView>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/txtTitle1"
+        android:text="Movie title"
+        android:typeface="sans"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        style="@style/Base.TextAppearance.AppCompat.Headline">
+
+        </TextView>
+
+    <ImageView
+        android:layout_width="154dp"
+        android:layout_height="231dp"
+        android:id="@+id/imgIcon1" />
+
+    <LinearLayout android:id="@+id/LinearLayout03"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Release date: "
+            android:textSize="12dp"
+            style="@style/Base.TextAppearance.AppCompat.Headline">
+
+            </TextView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate1"
+            android:textStyle="bold"
+            android:textSize="12dp">
+
+            </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout04"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Vote average: "
+            android:textSize="12dp"
+            style="@style/Base.TextAppearance.AppCompat.Headline">
+
+            </TextView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVote1"
+            android:textStyle="bold"
+            android:textSize="12dp">
+
+            </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout05"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Vote count: "
+            android:textSize="12dp"
+            style="@style/Base.TextAppearance.AppCompat.Headline">
+
+            </TextView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCount1"
+            android:textStyle="bold"
+            android:textSize="12dp">
+
+            </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout06"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Popularity: "
+            android:textSize="12dp"
+            style="@style/Base.TextAppearance.AppCompat.Headline">
+
+            </TextView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPop1"
+            android:textStyle="bold"
+            android:textSize="12dp">
+
+            </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout07"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Overview: "
+            android:textSize="12dp"
+            style="@style/Base.TextAppearance.AppCompat.Headline">
+
+            </TextView>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOver1"
+        android:textStyle="bold"
+        android:textSize="12dp">
+
+        </TextView>
+
+</LinearLayout>
+
+</ScrollView>
