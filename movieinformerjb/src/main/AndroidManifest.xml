@@ -9,35 +9,32 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
-
+            android:label="MovieInformer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.example.sanya.ua.movieinformerjb.ListsOfMovies"
             android:label="title_activity_search_progress" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
             android:name="com.example.sanya.ua.movieinformerjb.MovieTotalInfo"
-            android:label="title_activity_search_progress" >
+            android:label="title_movie_details" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
