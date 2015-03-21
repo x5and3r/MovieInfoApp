@@ -176,17 +176,17 @@ public class ListsOfMovies extends Activity {
             JSONArray array = (JSONArray) jsonObject.get("results");
             for (int i = 0; i < array.length(); i++) {
                 JSONObject jsonMovieObject = array.getJSONObject(i);
-                MovieResult.Builder movieBuilder = MovieResult.newBuilder(
-                        Integer.parseInt(jsonMovieObject.getString("id")),
-                        jsonMovieObject.getString("title"))
-                        .setBackdropPath(jsonMovieObject.getString("backdrop_path"))
-                        .setOriginalTitle(jsonMovieObject.getString("original_title"))
-                        .setPopularity(jsonMovieObject.getDouble("popularity"))
-                        .setVoteAverage(jsonMovieObject.getDouble("vote_average"))
-                        .setPosterPath(jsonMovieObject.getString("poster_path"))
-                        .setReleaseDate(jsonMovieObject.getString("release_date"))
-                .setVoteCount(jsonMovieObject.getInt("vote_count"));
-                results.add(movieBuilder.build());
+                MovieResult mBuilder = new MovieResult();
+                mBuilder.setId(Integer.parseInt(jsonMovieObject.getString("id")));
+                mBuilder.setTitle(jsonMovieObject.getString("title"));
+                mBuilder.setBackdropPath(jsonMovieObject.getString("backdrop_path"));
+                mBuilder.setOriginalTitle(jsonMovieObject.getString("original_title"));
+                mBuilder.setPopularity(jsonMovieObject.getDouble("popularity"));
+                mBuilder.setVoteAverage(jsonMovieObject.getDouble("vote_average"));
+                mBuilder.setPosterPath(jsonMovieObject.getString("poster_path"));
+                mBuilder.setReleaseDate(jsonMovieObject.getString("release_date"));
+                mBuilder.setVoteCount(jsonMovieObject.getInt("vote_count"));
+                results.add(mBuilder);
             }
         } catch (JSONException e) {
             System.err.println(e);
